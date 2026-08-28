@@ -367,13 +367,19 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 // transit diagram: radial layout, house at center, destinations at real walking/transfer times
 const nodes = [
-  { angle: -100, dist: 0.20, time: '10 分鐘', place: '京成曳舟站', note: '徒步・最近車站' },
-  { angle: -40,  dist: 0.34, time: '2 分鐘',  place: '押上・晴空塔', note: '電車直達' },
-  { angle: 15,   dist: 0.40, time: '5 分鐘',  place: '淺草寺・雷門', note: '電車直達' },
-  { angle: 65,   dist: 0.30, time: '8 分鐘',  place: '錦糸町', note: '轉乘1次' },
-  { angle: 120,  dist: 0.36, time: '10 分鐘', place: '兩國國技館', note: '轉乘1次' },
-  { angle: 175,  dist: 0.44, time: '28 分鐘', place: '東京站・銀座', note: '轉乘1次' },
-  { angle: 220,  dist: 0.46, time: '30-40 分鐘', place: '新宿・澀谷', note: '轉乘1次' }
+  { angle: -104, dist: 0.20, time: '10 分鐘', place: '京成曳舟站', note: '徒步・最近車站' },
+  { angle: -76,  dist: 0.34, time: '2 分鐘',  place: '押上・晴空塔', note: '電車直達' },
+  { angle: -48,  dist: 0.30, time: '5 分鐘',  place: '淺草寺・雷門', note: '電車直達' },
+  { angle: -20,  dist: 0.44, time: '20 分鐘', place: '上野', note: '轉乘1次' },
+  { angle: 8,    dist: 0.30, time: '8 分鐘',  place: '錦糸町', note: '轉乘1次' },
+  { angle: 36,   dist: 0.36, time: '10 分鐘', place: '兩國國技館', note: '轉乘1次' },
+  { angle: 64,   dist: 0.48, time: '28 分鐘', place: '東京站・銀座', note: '轉乘1次' },
+  { angle: 92,   dist: 0.52, time: '45 分鐘', place: '迪士尼樂園', note: '轉乘1次' },
+  { angle: 120,  dist: 0.52, time: '約 50 分鐘', place: '羽田機場', note: '淺草線直通' },
+  { angle: 148,  dist: 0.48, time: '40 分鐘', place: '澀谷', note: '轉乘1次' },
+  { angle: 176,  dist: 0.52, time: '38 分鐘', place: '新宿', note: '轉乘1次' },
+  { angle: 204,  dist: 0.48, time: '35 分鐘', place: '池袋', note: '轉乘1次' },
+  { angle: 236,  dist: 0.58, time: '約 65 分鐘', place: '成田機場', note: '京成線可直達方向' }
 ];
 
 function buildTransit(){
